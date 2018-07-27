@@ -1,0 +1,14 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://192.168.202.136:9999/eureka/
+server:
+  port: 9001
+spring:
+  application:
+    name: comsumer-feign
+  zipkin:
+    base-url: http://192.168.202.136:9900
+feign:
+   hystrix:
+     enabled: true

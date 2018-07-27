@@ -1,0 +1,11 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://192.168.202.136:9999/eureka/
+server:
+  port: 9000
+spring:
+  application:
+    name: comsumer-ribbon
+  zipkin:
+    base-url: http://192.168.202.136:9900

@@ -1,0 +1,17 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://192.168.202.136:9999/eureka/
+server:
+  port: 9800
+spring:
+  application:
+    name: service-zuul
+zuul:
+  routes:
+    api-a:
+      path: /api-a/**
+      serviceId: comsumer-ribbon
+    api-b:
+      path: /api-b/**
+      serviceId: comsumer-feign
